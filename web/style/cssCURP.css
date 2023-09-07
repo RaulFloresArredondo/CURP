@@ -1,0 +1,29 @@
+.centrar{
+    text-align: center;
+}
+.color{
+    background-color: darkslategrey;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.transparencia{
+      background-color: rgba(245, 245, 220, 0.25);
+      padding: 5px;
+}

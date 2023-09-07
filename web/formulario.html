@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Consulta tu curp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/bootstrap-5.3.0-dist/css/bootstrap.min.css"/>
+        <link href="style/cssCURP.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <div class=' border-1 col-9 mx-4' style='height: 90px;'>
+                    <img src='IMG/RENAPO.jpg' alt='Logo' style='height: 90px'>
+                </div>
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="formulario.html">Consulta tu CURP</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <br><br>    
+    <center><div class='p-3 m-3 mx-auto rounded-2 col-7  my-2 border border-bottom shadow-lg'
+             style='background-color: darkkhaki'>
+            <br>
+            <br>
+            <h3 class='d-flex justify-content-center'>Ingresa lo que se te pide</h3>
+            <form>
+                <br>
+
+                <label for="txtApellidoP">Apellido paterno</label>
+                <input type="text" id="txtApellidoP">
+                <label for="txtApellidoM">Apellido materno</label>
+                <input type="text" id="txtApellidoM"><br>
+                <br>
+                <label for="txtnombre">Nombre completo</label>
+                <input type="text" id="txtnombre">
+                <label for="txtFechaNacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="txtFechaNacimiento"><br>
+                <label class="mt-2">Estado: </label>
+                <select class="d-block mb-3" id="txtEstado">
+                    <option value="AS">Aguascalientes</option>
+                    <option value="BC">Baja California</option>
+                    <option value="BS">Baja Califronia Sur</option>
+                    <option value="CC">Campeche</option>
+                    <option value="CL">Coahuila</option>
+                    <option value="CM">Colima</option>
+                    <option value="CS">Chiapas</option>
+                    <option value="CH">Chihuahua</option>
+                    <option value="DF">Ciudad de México</option>
+                    <option value="DG">Durango</option>
+                    <option value="GT">Guanajuato</option>
+                    <option value="GR">Guerrero</option>
+                    <option value="HG">Hidalgo</option>
+                    <option value="JC">Jalisco</option>
+                    <option value="MC">Estado de México</option>
+                    <option value="MN">Michoacán</option>
+                    <option value="MS">Morelos</option>
+                    <option value="NT">Nayarit</option>
+                    <option value="NL">Nuevo León</option>
+                    <option value="OC">Oaxaca</option>
+                    <option value="PL">Puebla</option>
+                    <option value="QT">Querétaro</option>
+                    <option value="QR">Quintana Roo</option>
+                    <option value="SP">San Luis Potosí</option>
+                    <option value="SL">Sinaloa</option>
+                    <option value="SR">Sonora</option>
+                    <option value="TC">Tabasco</option>
+                    <option value="TS">Tamaulipas</option>
+                    <option value="TL">Tlaxcala</option>
+                    <option value="VZ">Veracruz</option>
+                    <option value="YN">Yucatán</option>
+                    <option value="ZS">Zacatecas</option>
+                    <option value="NE">Nacido en el extranjero</option>
+                </select>
+                <label>
+                    <label for="txtgenero">Genero:</label><br>
+                    <input type="radio" name="genero" value="H" id="txtHombre">
+                    Hombre
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="M" id="txtMujer">
+                    Mujer
+                </label> <br>
+
+            </form>
+            <button onclick='calcular();' class="btn btn-info ">Calcular</button><br>
+            <H1>Su CURP es:</H1>
+            
+            <p id="txtGenerar" class="text-center"></p>
+
+        </div></center>
+        <script src="js/js.js"></script>
+    </body>
+</html>
